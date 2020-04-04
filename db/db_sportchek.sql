@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 02, 2020 at 04:08 AM
--- Server version: 10.4.10-MariaDB
+-- Generation Time: Apr 04, 2020 at 07:49 PM
+-- Server version: 10.4.10-Localhost
 -- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db`
+-- Database: `db_sportchek`
 --
 
 -- --------------------------------------------------------
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `tbl_products` (
   `product_image` varchar(100) NOT NULL DEFAULT 'cover_default.jpg',
   `product_name` varchar(125) NOT NULL,
   `product_price` varchar(20) NOT NULL,
-  `product_descripion` text NOT NULL,
+  `product_description` text NOT NULL,
   PRIMARY KEY (`product_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `tbl_products` (
 -- Dumping data for table `tbl_products`
 --
 
-INSERT INTO `tbl_products` (`product_id`, `product_image`, `product_name`, `product_price`, `product_descripion`) VALUES
+INSERT INTO `tbl_products` (`product_id`, `product_image`, `product_name`, `product_price`, `product_description`) VALUES
 (1, 'adidas Women\'s Cloudfoam QT Racer Shoes.jpg', 'adidas Women\'s Cloudfoam QT Racer Shoes', '$94.99', 'Sleek lines, fresh style. These girls\' adidas shoes remake a racing look in geometric mesh with branding on the tongue and heel. Cushioned Cloudfoam promises a soft, smooth ride.'),
 (2, 'adidas Women\'s Parley We All Care.jpg', 'adidas Women\'s Parley We All Care 7/8 Tights', '$47.97', 'Push through extra reps in these seven-eighth-length tights. They’re made of a stretchy fabric that hugs your body and wicks moisture to keep you dry. Inner waist pockets can stow keys and cards while you work. This product is created with yarn made in collaboration with Parley for the Oceans. Some of the yarn features Parley Ocean Plastic™ which is made from recycled waste, intercepted from beaches and coastal communities before it reaches the ocean.'),
 (3, 'adidas Women\'s Saturday Plus Hat - Glow Pink.jpg', 'adidas Women\'s Saturday Plus Hat - Glow Pink', '$25.99', 'Classic and sporty, this cap is embroidered with a small adidas Badge of Sport on the front. It’s built for comfort with smooth polyester, and comes with a moisture-wicking sweatband inside to keep you dry while training. A metal slider in the back allows you to adjust the fit.'),
@@ -168,7 +168,7 @@ INSERT INTO `tbl_products_brand` (`products_brand_id`, `product_id`, `brand_id`)
 
 DROP TABLE IF EXISTS `tbl_user`;
 CREATE TABLE IF NOT EXISTS `tbl_user` (
-  `user_id` mediumint(8) NOT NULL,
+  `user_id` mediumint(8) NOT NULL AUTO_INCREMENT,
   `user_fname` varchar(250) NOT NULL,
   `user_name` varchar(250) NOT NULL,
   `user_pass` varchar(250) NOT NULL,
@@ -176,7 +176,14 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `user_ip` varchar(50) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`) VALUES
+(1, 'prabh', 'prabh', '123', 'p_kaur73377@gmail.com', '2020-04-04 19:38:42', '::1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
