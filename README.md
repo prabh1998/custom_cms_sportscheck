@@ -6,9 +6,9 @@ offers a feature to the customer to create, edit and delete account.
 
 Authors
 
--Prabhjot Kaur(0866698)(Developper)
+    -Prabhjot Kaur(0866698)(Developper)
 
--Prabhjot Kaur(0912499)(Designer)
+    -Prabhjot Kaur(0912499)(Designer)
 
 Instructions to Run it
 
@@ -21,17 +21,17 @@ Instructions to Run it
 
 Login For Test
 
-User: prabh
+    User: prabh
 
-Pass: 123
+    Pass: 123
 
 Dependencies
 
-HTML
-CSS3
-PHP
-MYSQL
+    HTML
+    CSS3
+    PHP
+    MYSQL
 
 Licence
 
-MIT
+    MIT
