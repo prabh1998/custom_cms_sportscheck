@@ -5,8 +5,8 @@ class Product
     private $conn;
 
     // Note: update table names, column names in here
-    public $product_table               = 'tbl_products';
-    public $brand_table               = 'tbl_brand';
+    public $product_table = 'tbl_products';
+    public $brand_table   = 'tbl_brand';
     public $product_brand_linking_table = 'tbl_products_brand';
 
     public function __construct($db)
@@ -40,7 +40,7 @@ class Product
         $query .= ' LEFT JOIN ' . $this->product_brand_linking_table . ' link ON link.product_id = m.product_id';
         $query .= ' LEFT JOIN ' . $this->brand_table . ' g ON link.brand_id = g.brand_id ';
         $query .= ' GROUP BY m.product_id';
-        $query .= ' HAVING brandt_name LIKE "%'.$brand.'%"';
+        $query .= ' HAVING brand_name LIKE "%'.$brand.'%"';
 
         // prepare query statement
         $stmt = $this->conn->prepare($query);

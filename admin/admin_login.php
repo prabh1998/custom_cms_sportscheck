@@ -23,8 +23,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Login page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
+    <h2 class="login">Admin Login Area</h2>
     <?php echo !empty($message)?$message:''; ?>
     <form action="admin_login.php" method="post">
         <label>Username:</label><br>
@@ -35,5 +38,7 @@
 
         <button name="submit">Submit</button>
     </form>
+    <a href="admin_createuser.php">Create User</a>
+    <a href="../index.php">Home Page</a>
 </body>
 </html>

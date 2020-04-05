@@ -1,0 +1,92 @@
+body{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 4%;
+    
+}
+
+a{
+    font-size: 20px bold;
+    color: red;
+    margin-top: 1%;
+    padding: 5px;
+    border-radius: 3px;
+}
+.hidden{
+    display:none;
+}
+
+#Logo{
+    margin-top: 1%;
+    margin-left: 35%;
+    
+}
+
+header{
+    border: 25px;
+    margin: 0 auto;
+}
+
+.filterNav{
+   border-radius: 5px;
+   padding: 5px;
+   background-color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px bold;
+    /* color: white; */
+
+
+}
+
+
+
+#link{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+
+}
+
+/* .filterNav ul
+    li a{
+    display: flex;
+
+} */
+
+#search{
+    /* margin-left: 40%; */
+    /* margin-top: 5%; */
+    border-radius: 4px;
+    border-color: black;
+    padding: 1%;
+    width: 15%;
+}
+
+.admin{
+    padding: 3px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.product-item{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+/* h2{
+    margin: 30%;
+} */
+/* .login{
+    margin: 30%;
+} */
+footer{
+    margin-top: 3%;
+    padding: 5px;
+    background-color: black;
+    border-radius: 3px;
+    font-size: 20px;
+}
