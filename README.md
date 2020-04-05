@@ -1,6 +1,8 @@
 # custom_cms_sportscheck
 
-    This is sportchek based website made with PHP. It filter through 35 products which are pulled from a MySql database by product type by brand. The site features a section for SportChek admins to upload, edit & delete products.This offers a feature to the customer to create, edit and delete account.
+This is sportchek based website made with PHP. It filter through 35 products which are pulled from a MySql database
+by product type by brand. The site features a section for SportChek admins to upload, edit & delete products.This
+offers a feature to the customer to create, edit and delete account.
 
 Authors
 
