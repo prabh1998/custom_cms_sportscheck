@@ -38,5 +38,6 @@
 
         <button type="submit" name="submit">Create User</button>
     </form>
+    <a href="admin_login.php">Login</a>
 </body>
 </html>

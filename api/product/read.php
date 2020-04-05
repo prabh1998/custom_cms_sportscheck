@@ -8,7 +8,7 @@ include_once '../../config/database.php';
 include_once '../objects/product.php';
 
 // instantiate database and product object
-$db = Database::getInstance()->getConnection();
+$db       = Database::getInstance()->getConnection();
 
 // initialize object
 $product = new Product($db);
@@ -17,7 +17,7 @@ $product = new Product($db);
 if (isset($_GET['id'])) {
     $stmt = $product->getProductByID($_GET['id']);
 } else if(isset($_GET['brand'])){
-    $stmt = $product->getProductByBrand($_GET['brand']);
+    $stmt = $product->getProductBySport($_GET['brand']);
 }else {
     $stmt = $product->getProduct();
 }

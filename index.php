@@ -37,6 +37,8 @@ if (isset($_GET['filter'])) {
             <h4>Product Price: <?php echo $row['product_price']; ?></h4>
             <a href="details.php?id=<?php echo $row['product_id']; ?>">Click here for More...</a>
         </div>
+
+        <!-- <a href="admin/admin_login.php">Admin</a> -->
     <?php endwhile;?>
     <?php include 'templates/footer.php';?>
 </body>
